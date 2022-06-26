@@ -1,0 +1,26 @@
+<div *ngFor="let todo of todos">
+        <!-- <app-todo-item [todo]="todo" (todoDelete)="deleteTodo($event)">
+        </app-todo-item> -->
+        <p>{{todo.sno}} - {{todo.title}}- {{todo.description}}</p>
+        <button class="btn btn-danger"> Delete </button>
+
+</div>
+<div>
+        <h1>Add your todos</h1>
+        <form>
+                <div class="mb-6">
+                  <label  class="form-label">Title</label>
+                  <input  class="form-control">
+                  <div  class="form-text">Enter your todo title.</div>
+                </div>
+                <div class="mb-7">
+                  <label class="form-label">Description</label>
+                  <input class="form-control">
+                </div>
+                <div class="mb-7 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Todos for 1st week.</label>
+                </div>
+                <button type="add" class="btn btn-primary">Add</button>
+              </form>
+</div>
